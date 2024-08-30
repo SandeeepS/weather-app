@@ -1,5 +1,6 @@
 import React from 'react';
-import { BsFillSunFill, BsCloudyFill, BsFillCloudRainFill, BsCloudFog2Fill, TiWeatherPartlySunny } from "react-icons/bs";
+import { BsFillSunFill, BsCloudyFill, BsFillCloudRainFill, BsCloudFog2Fill } from "react-icons/bs";
+import { TiWeatherPartlySunny } from 'react-icons/ti';
 
 interface WeatherDataProps {
   name: string;
@@ -18,7 +19,7 @@ interface WeatherDataProps {
   };
 }
 
-const WeatherDisplayComponent: React.FC<WeatherDataProps> = ({ name, main, sys, weather, wind }) => (
+const WeatherDisplayComponent: React.FC<WeatherDataProps> = ({ name, main, sys, weather }) => (
   <div className="weatherArea">
     <h1>{name}</h1>
     <span>{sys.country}</span>
