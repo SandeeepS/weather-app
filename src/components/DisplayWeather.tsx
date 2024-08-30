@@ -121,7 +121,7 @@ function DisplayWeather() {
   return (
     <MainWrapper>
       <div className="container">
-        <WeatherInputComponent value={searchCity} onChange={(e) => setSearchCity(e.target.value)} />
+        <WeatherInputComponent value={searchCity}  onChange={(e) => setSearchCity(e.target.value)} onSearch={handleSearch} />
 
         {weatherData && isLoading ? (
           <>
